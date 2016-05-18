@@ -15,19 +15,19 @@
 		
 </template>
 <template name="tasks">
-	<center>
+	
 	{{#if currentUser}}
+	<center>
 	<h2>Welcome to Discussion board</h2>
 		<form class="add-task">
-			<textarea rows="8" name=name cols="60" placeholder="Type Here">gfhfj</textarea>
+			<textarea rows="8" name=name cols="60" placeholder="Type Here"></textarea>
 			<input type="submit" id="s" value="Submit" />
 		</form>
 	</center>
-	<ul>
+
 		{{#each tasks}}
-			<li> >> {{name}}</li>
+			 >> {{name}}<br/>
 		{{/each}}
-	</ul>
+	
 	{{/if}}
- 
 </template>
