@@ -1,0 +1,24 @@
+/* CSS declarations go here */
+h1{
+	background-color: red;
+	margin-top: -1%;
+	margin-right: -1%;
+	margin-left: -1%;
+	text-align: left;
+	padding: 2%;
+
+}
+input#s{
+	height: 30px;
+	width: 110px;
+	background-color: blue;
+	color: white;
+}
+input#s:hover{
+	background-color: red;
+	color: white;
+}
+textarea{
+	margin-left: 15%;
+	font-family: sans-serif;
+}

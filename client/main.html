@@ -1,0 +1,33 @@
+<head>
+  <title>myApp Ashutosh</title>
+</head>
+
+<body>
+ {{>disboard}}
+ {{>tasks}}
+</body>
+
+<template name="disboard">
+	 <h1>DISCUSSION BOARD</h1>
+  	 <div id="signin">{{>loginButtons}}</div>
+		
+			
+		
+</template>
+<template name="tasks">
+	<center>
+	{{#if currentUser}}
+	<h2>Welcome to Discussion board</h2>
+		<form class="add-task">
+			<textarea rows="8" name=name cols="60" placeholder="Type Here">gfhfj</textarea>
+			<input type="submit" id="s" value="Submit" />
+		</form>
+	</center>
+	<ul>
+		{{#each tasks}}
+			<li> >> {{name}}</li>
+		{{/each}}
+	</ul>
+	{{/if}}
+ 
+</template>
